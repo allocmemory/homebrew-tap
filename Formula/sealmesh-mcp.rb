@@ -1,25 +1,25 @@
 class SealmeshMcp < Formula
   desc "The MCP server a coding agent mounts over stdio to reach sealmesh — Claude Code and Codex both"
-  homepage "https://github.com/SealMesh/sealmesh"
-  version "0.1.0"
+  homepage "https://github.com/allocmemory/sealmesh"
+  version "0.2.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/SealMesh/sealmesh/releases/download/v0.1.0/sealmesh-mcp-aarch64-apple-darwin.tar.xz"
-      sha256 "9954b406320933081cd18da52ad4135fef2c2a0820bb64a54f8adbf4bdcf9b50"
+      url "https://github.com/allocmemory/sealmesh/releases/download/v0.2.0/sealmesh-mcp-aarch64-apple-darwin.tar.xz"
+      sha256 "82076cb7a20caf163545acc35565435ca642d46c31ffdd4fc9c3df7edf3c2e08"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/SealMesh/sealmesh/releases/download/v0.1.0/sealmesh-mcp-x86_64-apple-darwin.tar.xz"
-      sha256 "88fce9d4b44807936a9616d7b1489b2d4b3968a444d8a6508b9f03e99e1de972"
+      url "https://github.com/allocmemory/sealmesh/releases/download/v0.2.0/sealmesh-mcp-x86_64-apple-darwin.tar.xz"
+      sha256 "d5176b1da8a89c501abf65760e56ae1a47cb34c024aa0f326b3fa77fd0eefa54"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/SealMesh/sealmesh/releases/download/v0.1.0/sealmesh-mcp-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "f143b29f391649d21d42deb34e0c18fafe4b90cee5627a5e366c2f263aa42d90"
+      url "https://github.com/allocmemory/sealmesh/releases/download/v0.2.0/sealmesh-mcp-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "8828e0e977c8c5179342e59753946a0872f5d63f518fb07807d8f18fb4510acd"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/SealMesh/sealmesh/releases/download/v0.1.0/sealmesh-mcp-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "8a2fefbf574da6a891e896120907af30b45304bd53911016a447de72e98bf120"
+      url "https://github.com/allocmemory/sealmesh/releases/download/v0.2.0/sealmesh-mcp-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "e7fbc4bfa3deb9423d0ff2a1731640403c48798fce852e671ee20fa1869f8380"
     end
   end
   license "AGPL-3.0-only"
