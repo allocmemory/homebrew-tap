@@ -1,25 +1,25 @@
 class SealmeshMcp < Formula
   desc "The MCP server a coding agent mounts over stdio to reach sealmesh — Claude Code and Codex both"
   homepage "https://github.com/allocmemory/sealmesh"
-  version "0.2.0"
+  version "0.2.1"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/allocmemory/sealmesh/releases/download/v0.2.0/sealmesh-mcp-aarch64-apple-darwin.tar.xz"
-      sha256 "82076cb7a20caf163545acc35565435ca642d46c31ffdd4fc9c3df7edf3c2e08"
+      url "https://github.com/allocmemory/sealmesh/releases/download/v0.2.1/sealmesh-mcp-aarch64-apple-darwin.tar.xz"
+      sha256 "937f3b5da9b343e6c84de4221a32053bbef2627ee9897bf7577770d2c0a1c328"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/allocmemory/sealmesh/releases/download/v0.2.0/sealmesh-mcp-x86_64-apple-darwin.tar.xz"
-      sha256 "d5176b1da8a89c501abf65760e56ae1a47cb34c024aa0f326b3fa77fd0eefa54"
+      url "https://github.com/allocmemory/sealmesh/releases/download/v0.2.1/sealmesh-mcp-x86_64-apple-darwin.tar.xz"
+      sha256 "e55483caf771674ed82707bf671ba2a9a8347aa109534b8ca3c20564bc1127b2"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/allocmemory/sealmesh/releases/download/v0.2.0/sealmesh-mcp-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "8828e0e977c8c5179342e59753946a0872f5d63f518fb07807d8f18fb4510acd"
+      url "https://github.com/allocmemory/sealmesh/releases/download/v0.2.1/sealmesh-mcp-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "52a9ae1fb16416c8027f0e77fd3c4944b9a25dc65ee22e5d1527e24259d62d95"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/allocmemory/sealmesh/releases/download/v0.2.0/sealmesh-mcp-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "e7fbc4bfa3deb9423d0ff2a1731640403c48798fce852e671ee20fa1869f8380"
+      url "https://github.com/allocmemory/sealmesh/releases/download/v0.2.1/sealmesh-mcp-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "bb3498c312ea8826cfa3b545113ef228d99781393b5f47db154ee45fabeb77b1"
     end
   end
   license "AGPL-3.0-only"
