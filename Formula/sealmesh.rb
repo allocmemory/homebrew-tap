@@ -1,25 +1,25 @@
 class Sealmesh < Formula
   desc "See what your coding agents are working on across machines, without messaging anyone"
   homepage "https://github.com/allocmemory/sealmesh"
-  version "0.2.0"
+  version "0.2.1"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/allocmemory/sealmesh/releases/download/v0.2.0/sealmesh-aarch64-apple-darwin.tar.xz"
-      sha256 "71d3d50f9f9130bdd694df2e63520d642441bd44323ee8e8f35797069fc6890a"
+      url "https://github.com/allocmemory/sealmesh/releases/download/v0.2.1/sealmesh-aarch64-apple-darwin.tar.xz"
+      sha256 "faef91d1c4ed1865b55929f51a4f8ba533e5c3216706c828fa500625338f2a3a"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/allocmemory/sealmesh/releases/download/v0.2.0/sealmesh-x86_64-apple-darwin.tar.xz"
-      sha256 "42e7534d1306b67b54e1cf94278dbcf47a4980cda634a861986c009932fb05d6"
+      url "https://github.com/allocmemory/sealmesh/releases/download/v0.2.1/sealmesh-x86_64-apple-darwin.tar.xz"
+      sha256 "954cc55c633e8436ff8ecbd3cb9e0012b0dae9a5d72104ab726ffa78fccb603c"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/allocmemory/sealmesh/releases/download/v0.2.0/sealmesh-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "3675266455b98edcadef1747e19ea842abe3efb8c60b0a92110ffcca5fc13986"
+      url "https://github.com/allocmemory/sealmesh/releases/download/v0.2.1/sealmesh-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "961c42ba551f646e02bc0433d6070788096b5f5279486f0308f7fe491053f382"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/allocmemory/sealmesh/releases/download/v0.2.0/sealmesh-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "0895c80aec81818b84ccd9a996cafeffb0c725f38c8f6e97d33678139149e7cf"
+      url "https://github.com/allocmemory/sealmesh/releases/download/v0.2.1/sealmesh-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "cff0089c4c0fadeff91e3de1a3721a1bd902b9382723630ab6bf8dfbb56eb6b0"
     end
   end
   license "AGPL-3.0-only"
