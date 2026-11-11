@@ -1,25 +1,25 @@
 class Sealmesh < Formula
   desc "See what your coding agents are working on across machines, without messaging anyone"
-  homepage "https://github.com/SealMesh/sealmesh"
-  version "0.1.0"
+  homepage "https://github.com/allocmemory/sealmesh"
+  version "0.2.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/SealMesh/sealmesh/releases/download/v0.1.0/sealmesh-aarch64-apple-darwin.tar.xz"
-      sha256 "fe277d234939581d0c1c1b733c46541ad68432ac1cb3009516fbce70a09f3e8e"
+      url "https://github.com/allocmemory/sealmesh/releases/download/v0.2.0/sealmesh-aarch64-apple-darwin.tar.xz"
+      sha256 "71d3d50f9f9130bdd694df2e63520d642441bd44323ee8e8f35797069fc6890a"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/SealMesh/sealmesh/releases/download/v0.1.0/sealmesh-x86_64-apple-darwin.tar.xz"
-      sha256 "afc933847e6a1db4e04e58e1fb31f1937128af2454b401112ffa62e95f649451"
+      url "https://github.com/allocmemory/sealmesh/releases/download/v0.2.0/sealmesh-x86_64-apple-darwin.tar.xz"
+      sha256 "42e7534d1306b67b54e1cf94278dbcf47a4980cda634a861986c009932fb05d6"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/SealMesh/sealmesh/releases/download/v0.1.0/sealmesh-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "c9d4cc7d26b9d9e6c251067f1750ac7fed49a7e36c6a643e2edaf6b917136b74"
+      url "https://github.com/allocmemory/sealmesh/releases/download/v0.2.0/sealmesh-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "3675266455b98edcadef1747e19ea842abe3efb8c60b0a92110ffcca5fc13986"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/SealMesh/sealmesh/releases/download/v0.1.0/sealmesh-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "4cc2322c3ed1db92174a647bd02569545cceebe0556a7fa23bc6d36133b6ce72"
+      url "https://github.com/allocmemory/sealmesh/releases/download/v0.2.0/sealmesh-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "0895c80aec81818b84ccd9a996cafeffb0c725f38c8f6e97d33678139149e7cf"
     end
   end
   license "AGPL-3.0-only"
